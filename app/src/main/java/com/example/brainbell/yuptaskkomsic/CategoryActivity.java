@@ -18,11 +18,19 @@ public class CategoryActivity extends AppCompatActivity {
     private List<MoviesTicket> moviesTicketList = new ArrayList<>();
     private RecyclerView recyclerView;
     private MoviesTicketAdapter moviesTicketAdapter;
+    private String username;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category);
+
+        Bundle bundle = getIntent().getExtras();
+        if (bundle == null) {
+            finish();
+        } else {
+            username = bundle.getString("username");
+        }
 
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
 
@@ -42,6 +50,13 @@ public class CategoryActivity extends AppCompatActivity {
             public void onClick(View view, int position) {
                 MoviesTicket moviesTicket = moviesTicketList.get(position);
                 Intent intent = new Intent(CategoryActivity.this, BookingActivity.class);
+                intent.putExtra("username", username);
+                intent.putExtra("title", moviesTicket.getTitle());
+                intent.putExtra("rating", moviesTicket.getRating());
+                intent.putExtra("plot", moviesTicket.getPlot());
+                intent.putExtra("imageResourceId", moviesTicket.getImageResourceId());
+                intent.putExtra("duration", moviesTicket.getDuration());
+                intent.putExtra("director", moviesTicket.getDirector());
                 startActivity(intent);
             }
 
@@ -55,52 +70,64 @@ public class CategoryActivity extends AppCompatActivity {
     }
 
     private void prepareMoviesTicketData() {
-        MoviesTicket moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        MoviesTicket moviesTicket = new MoviesTicket(R.drawable.wonder_woman,
+                getString(R.string.wonder_woman_title),
+                getString(R.string.wonder_woman_director),
+                9.2, 141, getString(R.string.wonder_woman_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.the_matrix,
+                getString(R.string.the_matrix_title),
+                getString(R.string.the_matrix_director),
+                8.7, 136, getString(R.string.the_matrix_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.terminator,
+                getString(R.string.the_terminator_title),
+                getString(R.string.harry_potter_director),
+                8.0, 107, getString(R.string.the_terminator_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.mr_and_mrs_smith,
+                getString(R.string.mr_and_mrs_smith_title),
+                getString(R.string.mr_and_mrs_smith_director),
+                6.5, 120, getString(R.string.mr_and_mrs_smith_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.twilight,
+                getString(R.string.twilight_title),
+                getString(R.string.twilight__director),
+                5.2, 121, getString(R.string.twilight__plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.the_hunger_games,
+                getString(R.string.the_hunger_games_title),
+                getString(R.string.the_hunger_games_director),
+                7.2, 142, getString(R.string.the_hunger_games_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.harry_potter,
+                getString(R.string.harry_potter_title),
+                getString(R.string.harry_potter_director),
+                7.5, 152, getString(R.string.harry_potter_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.the_avengers,
+                getString(R.string.the_avengers_title),
+                getString(R.string.the_avengers_director),
+                8.5, 143, getString(R.string.the_avengers_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.iron_man,
+                getString(R.string.iron_man_title),
+                getString(R.string.iron_man_director),
+                7.9, 126, getString(R.string.iron_man_plot));
         moviesTicketList.add(moviesTicket);
 
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
-        moviesTicketList.add(moviesTicket);
-
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
-        moviesTicketList.add(moviesTicket);
-
-        moviesTicket = new MoviesTicket(R.drawable.wonder_woman,"Wonder Woman",
-                "Patty Jenkins", 9.2, 141, getString(R.string.movie_about));
+        moviesTicket = new MoviesTicket(R.drawable.spider_man,
+                getString(R.string.spider_man_title),
+                getString(R.string.spider_man_director),
+                8.1, 133, getString(R.string.spider_man_plot));
         moviesTicketList.add(moviesTicket);
     }
 }

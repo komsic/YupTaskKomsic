@@ -10,7 +10,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -20,12 +20,12 @@
             <ImageView
                 android:id="@+id/booking_poster_img"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="#fff"
+                android:layout_height="400dp"
+                android:contentDescription="@string/poster_img"
+                android:background="#fff7da"
                 android:paddingBottom="4dp"
                 android:paddingTop="4dp"
-                android:scaleType="center"
-                android:src="@drawable/wonder_woman" />
+                tools:src="@drawable/the_avengers" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -37,7 +37,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentLeft="true"
-                    android:text="Wonder Woman"
+                    android:layout_alignParentStart="true"
+                    tools:text="@string/wonder_woman_title"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold" />
@@ -47,7 +48,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_alignParentRight="true"
-                    android:text="9.2"
+                    android:layout_alignParentEnd="true"
+                    tools:text="9.9"
                     android:textAppearance="?android:textAppearanceLarge"
                     android:textColor="@color/colorAccent"
                     android:textStyle="bold" />
@@ -58,7 +60,7 @@
                     android:layout_height="wrap_content"
                     android:layout_below="@id/booking_title_txt"
                     android:layout_marginTop="4dp"
-                    android:text="Director: Patty Jenkins"
+                    tools:text="@string/wonder_woman_director"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="#fff" />
 
@@ -69,7 +71,7 @@
                     android:layout_alignParentRight="true"
                     android:layout_below="@id/booking_rating_txt"
                     android:layout_marginTop="4dp"
-                    android:text="141 mins"
+                    tools:text="123"
                     android:textAppearance="?android:textAppearanceMedium"
                     android:textColor="#fff" />
 
@@ -81,7 +83,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="48dp"
                 android:padding="16dp"
-                android:text="@string/movie_about"
+                tools:text="@string/iron_man_plot"
                 android:textAppearance="?android:textAppearanceSmall"
                 android:textColor="#fff" />
 
@@ -93,7 +95,7 @@
             android:layout_alignParentBottom="true"
             android:background="@color/colorAccent"
             android:onClick="onClickBookNow"
-            android:text="Book Now"
+            android:text="@string/book_now"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="#fff" />
 

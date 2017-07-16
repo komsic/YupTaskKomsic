@@ -6,9 +6,90 @@
     <string name="log_in">Log In</string>
     <string name="forgot_password"><u>Forgot password?</u></string>
     <string name="or">or</string>
-    <string name="movie_about">Set in 1918, the film tells the story
+    <string name="poster_img">Poster Image</string>
+
+    <string name="wonder_woman_title">Wonder Woman</string>
+    <string name="wonder_woman_director">Patty Jenkins</string>
+    <string name="wonder_woman_plot">Set in 1918, the film tells the story
         of Princess Diana, who grows up on the Amazon island of Themyscira. After American pilot
         Steve Trevor (Pine) crashes offshore of the island and is rescued by Diana, he tells her
         about the ongoing World War. She then leaves her home in order to end the conflict,
         becoming Wonder Woman in the process.</string>
+
+    <string name="the_matrix_title">The Matrix</string>
+    <string name="the_matrix_director">The Wachowski Brothers</string>
+    <string name="the_matrix_plot">It depicts a dystopian future in which reality as perceived by
+        most humans is actually asimulated reality called \"the Matrix\", created by sentient
+        machines to subdue the humanpopulation, while their bodies\' heat and electrical activity
+        are used as an energy source. Computer programmer "Neo" learns this truth and is drawn into
+        a rebellion against the machines, which involves other people who have been freed from the
+        \"dream world.\"</string>
+
+    <string name="the_terminator_title">The Terminator</string>
+    <string name="the_terminator_director">James Cameron</string>
+    <string name="the_terminator_plot">It stars Arnold Schwarzenegger as the Terminator, a cyborg
+        assassin sent back in time from 2029 to 1984 to kill Sarah Connor (Linda Hamilton), whose
+        son will one day become a savior against machines in a post-apocalyptic future. Michael
+        Biehn plays Kyle Reese, a soldier from the future sent back in time to protect Connor.
+    </string>
+
+    <string name="mr_and_mrs_smith_title">Mr and Mrs Smith</string>
+    <string name="mr_and_mrs_smith_director">Doug Liman</string>
+    <string name="mr_and_mrs_smith_plot">The film stars Brad Pitt and Angelina Jolie as a bored
+        upper-middle class married couple surprised to learn that they are assassins belonging to
+        competing agencies, and that they have been assigned to kill each other.</string>
+
+    <string name="twilight_title">Twilight</string>
+    <string name="twilight__director">Catherine Hardwicke</string>
+    <string name="twilight__plot">This film focuses on the development of the relationship between
+        Bella Swan (a teenage girl) and Edward Cullen (a vampire), and the subsequent efforts of
+        Edward and his family to keep Bella safe from a coven of evil vampires.</string>
+
+    <string name="the_hunger_games_title">The Hunger Games</string>
+    <string name="the_hunger_games_director">Gary Ross</string>
+    <string name="the_hunger_games_plot">The story takes place in a dystopian post-apocalyptic
+        future in the nation of Panem, which is divided into 12 districts, where a boy and a girl
+        from each district, between the ages of 12 and 18 must take part in The Hunger Games, a
+        televised annual event in which the \"tributes\" of each district, are required to fight to
+        the death, until there is only one survivor. Katniss Everdeen (Jennifer Lawrence) volunteers
+        to take her younger sister\'s place. Joined by her district\'s male tribute, Peeta Mellark
+        (Josh Hutcherson), and Katniss travels to the Capitol to train for the Hunger Games under
+        the guidance of former victor Haymitch Abernathy (Woody Harrelson).</string>
+
+    <string name="harry_potter_title">Harry Potter and the Philosopher\'s Stone</string>
+    <string name="harry_potter_director">Chris Columbus</string>
+    <string name="harry_potter_plot">Adaptation of the first of J.K. Rowling\'s popular children\'s
+        novels about Harry Potter, a boy who learns on his eleventh birthday that he is the orphaned
+        son of two powerful wizards and possesses unique magical powers of his own. He is summoned
+        from his life as an unwanted child to become a student at Hogwarts, an English boarding
+        school for wizards. There, he meets several friends who become his closest allies and help
+        him discover the truth about his parents\' mysterious deaths.</string>
+
+    <string name="the_avengers_title">The Avengers</string>
+    <string name="the_avengers_director">Joss Whedon</string>
+    <string name="the_avengers_plot"> When Thor\'s evil brother, Loki (Tom Hiddleston), gains access
+        to the unlimited power of the energy cube called the Tesseract, Nick Fury (Samuel L.
+        Jackson), director of S.H.I.E.L. D., initiates a superhero recruitment effort to defeat the
+        unprecedented threat to Earth. Joining Fury\'s \"dream team\" are Iron Man (Robert Downey
+        Jr.), Captain America (Chris Evans), the Hulk (Mark Ruffalo), Thor (Chris Hemsworth), the
+        Black Widow (Scarlett Johansson) and Hawkeye (Jeremy Renner).</string>
+
+    <string name="iron_man_title">Iron Man</string>
+    <string name="iron_man_director">Jon Favreau</string>
+    <string name="iron_man_plot">A billionaire industrialist and genius inventor, Tony Stark (Robert
+        Downey Jr.), is conducting weapons tests overseas, but terrorists kidnap him to force him to
+        build a devastating weapon. Instead, he builds an armored suit and upends his captors.
+        Returning to America, Stark refines the suit and uses it to combat crime and terrorism.
+    </string>
+
+    <string name="spider_man_title">Spider-Man: Homecoming</string>
+    <string name="spider_man_director">Jon Watts</string>
+    <string name="spider_man_plot">Thrilled by his experience with the Avengers, young Peter Parker
+        returns home to live with his Aunt May. Under the watchful eye of mentor Tony Stark, Parker
+        starts to embrace his new found identity as Spider-Man. He also tries to return to his normal
+        daily routine distracted by thoughts of proving himself to be more than just a friendly
+        neighborhood superhero. Peter must soon put his powers to the test when the evil Vulture
+        emerges to threaten everything that he holds dear.</string>
+
+    <string name="book_now">Book Now</string>
 </resources>

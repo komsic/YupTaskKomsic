@@ -10,9 +10,9 @@
     <ImageView
         android:id="@+id/category_poster_img"
         android:layout_width="108dp"
-        android:layout_height="108dp"
-        android:background="#ffe84c3e"
-        tools:src="@drawable/wonder_woman"
+        android:layout_height="150dp"
+        android:background="#fff7da"
+        tools:src="@drawable/iron_man"
         android:paddingBottom="2dp"
         android:paddingTop="2dp"/>
 
