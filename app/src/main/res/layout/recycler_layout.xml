@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    android:orientation="horizontal"
+     android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/category_poster_img"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:background="#ffe84c3e"
+        tools:src="@drawable/wonder_woman"
+        android:paddingBottom="2dp"
+        android:paddingTop="2dp"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ff1b2836"
+        android:paddingLeft="8dp"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/category_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Wonder Woman"
+            android:gravity="bottom"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/category_director_txt"
+            android:layout_below="@id/category_title_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Patty Woman"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#fff" />
+
+        <TextView
+            android:id="@+id/category_rating_txt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="9.5"
+            android:textStyle="bold"
+            android:textAppearance="?android:textAppearanceLarge"
+            android:textColor="@color/colorAccent"
+            android:paddingEnd="4dp"
+            android:paddingRight="4dp"/>
+
+        <TextView
+            android:id="@+id/category_duration_txt"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@id/category_rating_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="141 mins"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="#fff"
+            android:paddingEnd="4dp"
+            android:paddingRight="4dp"/>
+    </RelativeLayout>
+
+
+</LinearLayout>

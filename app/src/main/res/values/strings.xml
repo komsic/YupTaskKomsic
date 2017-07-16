@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">YupTaskKomsic</string>
+    <string name="action_settings">Settings</string>
+    <string name="sign_up"><u>Sign up</u>.</string>
+    <string name="dont_have_acct">Don\'t have an account?</string>
+    <string name="log_in">Log In</string>
+    <string name="forgot_password"><u>Forgot password?</u></string>
+    <string name="or">or</string>
+    <string name="movie_about">Set in 1918, the film tells the story
+        of Princess Diana, who grows up on the Amazon island of Themyscira. After American pilot
+        Steve Trevor (Pine) crashes offshore of the island and is rescued by Diana, he tells her
+        about the ongoing World War. She then leaves her home in order to end the conflict,
+        becoming Wonder Woman in the process.</string>
+</resources>
