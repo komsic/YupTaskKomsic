@@ -30,7 +30,7 @@
             android:gravity="bottom"
             android:textColor="@color/colorAccent"
             android:textStyle="bold"
-            android:textAppearance="?android:textAppearanceMeduim" />
+            android:textAppearance="?android:textAppearanceMedium" />
 
         <TextView
             android:id="@+id/category_director_txt"

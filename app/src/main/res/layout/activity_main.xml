@@ -109,7 +109,6 @@
                 android:layout_weight="1"
                 android:background="#fff"
                 android:hint="more than 3 characters"
-                android:maxLines="1"
                 android:paddingLeft="8dp"
                 android:paddingStart="8dp" />
         </LinearLayout>
@@ -134,10 +133,9 @@
                 android:layout_weight="1"
                 android:background="#fff"
                 android:hint="more than 6 characters"
-                android:maxLines="1"
                 android:paddingLeft="8dp"
                 android:paddingStart="8dp"
-                android:password="true" />
+                android:inputType="textPassword" />
         </LinearLayout>
 
 
