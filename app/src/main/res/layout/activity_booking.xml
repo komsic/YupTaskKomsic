@@ -89,15 +89,60 @@
 
         </LinearLayout>
 
-        <Button
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentBottom="true"
-            android:background="@color/colorAccent"
-            android:onClick="onClickBookNow"
-            android:text="@string/book_now"
-            android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="#fff" />
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:onClick="onClickBookNow"
+                android:text="@string/book_now"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="#fff"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="1dp"/>
+
+            <LinearLayout
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@color/colorAccent"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:paddingLeft="32dp"
+                    android:paddingStart="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_music"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_weight="0.24"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorAccent"
+                    android:onClick="onClickTrailerNow"
+                    android:text="Trailer"
+                    android:textAppearance="?android:textAppearanceMedium"
+                    android:textColor="#fff"/>
+
+                <ImageView
+                    android:paddingRight="32dp"
+                    android:paddingEnd="32dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_music"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
 
     </RelativeLayout>
 </ScrollView>

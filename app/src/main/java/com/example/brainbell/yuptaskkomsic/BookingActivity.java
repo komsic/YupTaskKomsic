@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class BookingActivity extends AppCompatActivity {
 
     private String username;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -45,9 +46,6 @@ public class BookingActivity extends AppCompatActivity {
             ImageView posterImg = (ImageView) findViewById(R.id.booking_poster_img);
             posterImg.setImageResource(bundle.getInt("imageResourceId", 0));
         }
-
-
-
     }
 
     public void onClickBookNow(View view) {
