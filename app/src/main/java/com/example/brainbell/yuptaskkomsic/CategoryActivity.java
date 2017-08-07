@@ -52,9 +52,10 @@ public class CategoryActivity extends AppCompatActivity {
                 intent.putExtra("title", moviesTicket.getTitle());
                 intent.putExtra("rating", moviesTicket.getRating());
                 intent.putExtra("plot", moviesTicket.getPlot());
-                intent.putExtra("imageResourceId", moviesTicket.getImageResourceId());
                 intent.putExtra("duration", moviesTicket.getDuration());
                 intent.putExtra("director", moviesTicket.getDirector());
+                intent.putExtra("imageResourceId", moviesTicket.getImageResourceId());
+                intent.putExtra("audioResourceId", moviesTicket.getAudioResourceId());
                 startActivity(intent);
             }
 

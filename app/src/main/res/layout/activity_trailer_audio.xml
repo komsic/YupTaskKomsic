@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_layer_trailer"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="bottom"
+    android:gravity="bottom"
+    android:orientation="vertical"
+    tools:background="@drawable/mr_and_mrs_smith"
+    tools:context="com.example.brainbell.yuptaskkomsic.TrailerAudioActivity">
+
+    <RelativeLayout
+        android:background="#50000000"
+        android:layout_width="match_parent"
+        android:padding="16dp"
+        android:layout_height="wrap_content">
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/starting_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/seek_bar"
+            android:layout_alignStart="@id/seek_bar"
+            android:layout_below="@id/seek_bar"
+            android:text="0:00"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/stopping_time_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@id/seek_bar"
+            android:layout_alignRight="@id/seek_bar"
+            android:layout_below="@id/seek_bar"
+            android:text="0:00"
+            android:textColor="@color/colorAccent"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:background="#50000000"
+        android:id="@+id/control_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:paddingBottom="16dp">
+
+        <ImageButton
+            android:id="@+id/rewind_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_fast_rewind"
+            android:onClick="onClickRewindBtn"/>
+
+        <ImageButton
+            android:id="@+id/play_pause_btn"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:background="#00000000"
+            android:onClick="onClickPlayPauseBtn"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_pause"/>
+
+        <ImageButton
+            android:id="@+id/forward_btn"
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:background="#00000000"
+            android:onClick="onClickForwardBtn"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_fast_forward"/>
+    </LinearLayout>
+</LinearLayout>

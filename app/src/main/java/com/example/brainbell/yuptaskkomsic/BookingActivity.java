@@ -16,6 +16,8 @@ import android.widget.Toast;
 public class BookingActivity extends AppCompatActivity {
 
     private String username;
+    private int audioResourceId;
+    private int imageResourceId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,7 +46,10 @@ public class BookingActivity extends AppCompatActivity {
             ratingTxt.setText(String.valueOf(bundle.getDouble("rating", 0)));
 
             ImageView posterImg = (ImageView) findViewById(R.id.booking_poster_img);
-            posterImg.setImageResource(bundle.getInt("imageResourceId", 0));
+            imageResourceId = bundle.getInt("imageResourceId", 0);
+            posterImg.setImageResource(imageResourceId);
+
+            audioResourceId = bundle.getInt("audioResourceId", 0);
         }
     }
 
@@ -75,5 +80,12 @@ public class BookingActivity extends AppCompatActivity {
 
         AlertDialog alert = builder.create();
         alert.show();
+    }
+
+    public void onClickTrailerNow(View view) {
+        Intent intent = new Intent(this, TrailerAudioActivity.class);
+        intent.putExtra("imageResourceId", imageResourceId);
+        intent.putExtra("audioResourceId", audioResourceId);
+        startActivity(intent);
     }
 }
